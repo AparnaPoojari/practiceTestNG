@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-30T15:09:46 IST" name="Default suite" finished-at="2026-01-30T15:10:15 IST" duration-ms="28896">
+    <groups>
+    </groups>
+    <test started-at="2026-01-30T15:09:46 IST" name="Default test" finished-at="2026-01-30T15:10:15 IST" duration-ms="28896">
+      <class name="practiceTestNG.Basics">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:practiceTestNG.Basics@6150c3ec]" started-at="2026-01-30T15:09:46 IST" name="setUp" finished-at="2026-01-30T15:10:00 IST" duration-ms="14675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="windowOperations()[pri:0, instance:practiceTestNG.Basics@6150c3ec]" started-at="2026-01-30T15:10:00 IST" name="windowOperations" finished-at="2026-01-30T15:10:00 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowOperations -->
+        <test-method signature="ValidLogin()[pri:0, instance:practiceTestNG.Basics@6150c3ec]" started-at="2026-01-30T15:10:00 IST" name="ValidLogin" finished-at="2026-01-30T15:10:15 IST" duration-ms="14156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+      </class> <!-- practiceTestNG.Basics -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
