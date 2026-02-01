@@ -18,13 +18,10 @@ public class Basics {
 	@BeforeClass
 	public void setUp() {
 		driver=new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-
-	}
-	@BeforeMethod
-	public void windowOperations() {
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
 
 	}

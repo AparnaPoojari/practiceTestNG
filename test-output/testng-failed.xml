@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.VerifyPIM">
+      <class name="practiceTestNG.Basics">
         <methods>
+          <include name="windowOperations"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="prereqLogin"/>
-          <include name="info"/>
+          <include name="ValidLogin"/>
         </methods>
-      </class> <!-- tests.VerifyPIM -->
+      </class> <!-- practiceTestNG.Basics -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
