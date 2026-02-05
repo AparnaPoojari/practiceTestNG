@@ -30,10 +30,9 @@ public class LoginPage{
 	}
 	
   @Test(dataProvider="LoginData")
-  public void testLogin(String name,String pass) throws InterruptedException {
+  public void testLogin(String name,String pass)  {
 driver.findElement(By.name("username")).sendKeys(name);
 driver.findElement(By.name("password")).sendKeys(pass);
-Thread.sleep(3000);
 driver.findElement(By.xpath("//*[text()=' Login ']")).click();
 String currentUrl=driver.getCurrentUrl();
 Assert.assertTrue(currentUrl.contains("dashboard"));
