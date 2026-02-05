@@ -22,14 +22,14 @@ public class AddEmpPage {
 	  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
   }
  
-  public void login() throws InterruptedException  {
+  public void login()  {
 	  driver.findElement(By.name("username")).sendKeys("admin");
 	  driver.findElement(By.name("password")).sendKeys("admin123");
-Thread.sleep(3000);
+
 	  driver.findElement(By.xpath("//*[text()=' Login ']")).click();
   }
   @Test
-  public void addEmpDetails() throws InterruptedException {
+  public void addEmpDetails()  {
 	  login();
 	  driver.findElement(By.xpath("(//*[text()='PIM'])[1]")).click();
 	  String pimUrl=driver.getCurrentUrl();
@@ -40,8 +40,7 @@ Thread.sleep(3000);
   }
 
   @AfterMethod
-  public void tearDown() throws InterruptedException {
-	  Thread.sleep(3000);
+  public void tearDown()  {
 	  driver.quit();
 	  
   }

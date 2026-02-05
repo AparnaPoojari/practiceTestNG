@@ -3,11 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.AddEmpPage">
+      <class name="tests.LoginPage">
       <methods>
-          
-
-         <include name="addEmpDetails"/>
+          <include name="testLogin"/>
+         </methods>
+                 </class>
+         <class name="tests.AddEmpPage">
+      <methods>
+          <include name="addEmpDetails"/>
          </methods>
         </class>
     </classes>

@@ -12,9 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class LoginTest {
+public class LoginPage{
 	@BeforeMethod
-	  public void beforeMethod() {
+	  public void setUp() {
 		  driver= new ChromeDriver();
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
@@ -42,7 +42,7 @@ Assert.assertTrue(currentUrl.contains("dashboard"));
   
 
   @AfterMethod
-  public void afterMethod() {
+  public void tearDown() {
 	  driver.quit();
   }
 
